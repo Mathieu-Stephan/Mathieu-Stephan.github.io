@@ -1,3 +1,9 @@
+.bg-projet {
+  background-color: rgba(0,0,0,0.4);
+  padding: 30px;
+  color: inherit;
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
