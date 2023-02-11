@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style/style.css"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- Balise pour utiliser le css Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>  <!-- Balise pour utiliser le js Bootstrap -->
+  <title>SportTrack | Se connecter</title>
+</head>
+<body>
+
+  <div class="p-5 bg-primary text-white text-center" style="background-color: #7dc146 !important;"> <!-- div texte blanc centré fond vert -->
+    <h1>SportTrack - Se connecter</h1>
+    <p>Rebonjour, ravie de vous revoir sur SportTrack, connectez-vous !</p> 
+  </div>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark"> <!-- class géré par Bootstrap pour avoir une bar de navigation responsive au fond noir-->
+    <div class="container-fluid"> <!-- class géré par Bootstrap pour que la div soit responsive-->
+      <ul class="navbar-nav"> <!-- création menu responsive avec Bootstrap-->
+        <li class="nav-item"> <!-- création objet menu avec Bootstrap-->
+          <a class="nav-link" href="index.html">Créer un compte.</a><!--lien stylisé grace a Bootstrap,couleur verte-->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="modif.html">Modifier mes informations.</a><!--lien stylisé grace a Bootstrap,couleur verte-->
+        </li>
+        <li class="nav-item">
+          <!--lien avec style actif grace a Bootstrap,couleur blanche-->
+          <a class="nav-link active" href="connect.html" style="  color: white !important;" >Se connecter.</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="upload.html">Soumettre mes informations de sport.</a><!--lien stylisé grace a Bootstrap,couleur verte-->
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <div class="row">
+    <form method="get" action="index.html">
+      <h2>Connectez-vous !</h2>
+      
+      <!--Adresse électronique-->
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Adresse electronique</label>
+        <input required type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="toto@titi.com" name="mail">
+        <div id="emailHelp" class="form-text">Nous ne partagerons jamais votre adresse mail.</div>
+      </div>
+     
+      <!--Mot de passe-->
+      <div class="mb-3">
+        <div class="col-auto">
+          <label for="inputPassword6" class="col-form-label">Mot de passe</label>
+        </div>
+        <div class="col-auto">
+          <input required type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline" placeholder="Mot de Passe" name="mdp">
+        </div>
+        <div class="col-auto">
+          <span id="passwordHelpInline" class="form-text">
+            Veuillez entrer votre mot de passe.
+          </span>
+        </div>
+      </div>
+    
+      <button type="submit" class="btn btn-primary">Se connecter</button>
+    </form>
+    </div>
+  </div>
+
+
+  <div class="mt-5 p-4 bg-dark text-white text-center">
+    <!-- Lien vers le Youtube de SportsTrack dans une nouvelle fenetre -->
+    <a href="https://tinyurl.com/sport-strack" target="_blank"><p>N'hésitez pas à suivre SportTrack sur Youtube !</p></a>
+  </div>
+
+</body>
+</html>
