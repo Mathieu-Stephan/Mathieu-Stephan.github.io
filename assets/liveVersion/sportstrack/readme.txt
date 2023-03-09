@@ -18,7 +18,7 @@
 
    
 
-Nous avons utilisé la template ci dessus pour nos formulaire.
+Nous avons utilisé la template ci dessous pour nos formulaire.
 Le corps du site en lui-même provient de https://www.w3schools.com/bootstrap5/bootstrap_templates.php
 Voici un autre site que nous avons utilisé : https://getbootstrap.com/docs/5.0/examples/checkout/
 
