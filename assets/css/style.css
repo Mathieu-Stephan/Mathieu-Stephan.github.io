@@ -47,3 +47,16 @@ section {
   scroll-snap-stop: always;
 }
 
+#signature {
+  width: 100%;
+  stroke-dasharray: 740;
+  stroke-dashoffset: 740;
+  animation: signature 3.5s ease-in-out forwards;
+}
+
+@keyframes signature {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
