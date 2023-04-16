@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+
 .bg-projet {
   background-color: rgba(0,0,0,0.7);
-  padding: 30px;
   color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 @keyframes gradient {
@@ -24,13 +29,19 @@ body {
   color: #ececef;
 }
 
+
 #title {
-  font-size: 5rem;
+  margin: 0 auto;
+  font-size: 4rem;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
+  background-size: 200% 200%;
   animation: gradient 10s ease infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  z-index: 3; 
+  position: absolute;
+  text-align: center;
+  font-family: 'Tilt Prism', cursive;
 }
 
 html, body, section {
@@ -42,10 +53,6 @@ html {
   scroll-snap-type: y mandatory;
 }
 
-section {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-}
 
 #signature {
   width: 100%;
@@ -58,5 +65,40 @@ section {
   100% {
     stroke-dashoffset: 0;
   }
+}
+
+.stars, .twinkling, .clouds {
+	position:absolute;
+	display:block;
+	top:0; bottom:0;
+	left:0; right:0;
+	width:100%; height:100%;
+}
+
+.stars {
+	z-index: 0;
+	background: #000 url('https://i.imgur.com/YKY28eT.png') repeat top center;
+}
+
+.twinkling{
+	z-index: 1;
+	background:transparent url('https://i.imgur.com/XYMF4ca.png') repeat top center;
+	animation: move-twink-back 200s linear infinite;
+}
+
+.clouds{
+	z-index: 2;
+    background:transparent url('https://i.imgur.com/mHbScrQ.png') repeat top center;
+	animation: move-clouds-back 200s linear infinite;
+}
+
+@keyframes move-twink-back {
+	from {background-position:0 0;}
+	to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+	from {background-position:0 0;}
+	to {background-position:10000px 0;}
 }
 
